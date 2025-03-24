@@ -1,7 +1,5 @@
 import mysql from 'mysql';
-import dotenv from 'dotenv';
 
-dotenv.config(); // Load biến môi trường từ .env
 
 export const db = mysql.createPool({
   connectionLimit: 10, // Giới hạn số kết nối đồng thời
